@@ -1,0 +1,21 @@
+<div class="movies-container">
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Year</th>
+      <th>Running Time</th>
+      <th>Director</th>
+      <th>Certification</th>
+      <th>Rating</th>
+    </tr>
+
+    <tr *ngFor="let movie of movies">
+      <td>{{movie.title}}</td>
+      <td>{{movie.releaseDate}}</td>
+      <td>{{movie.length}}</td>
+      <td>{{movie.director}}</td>
+      <td>{{movie.certification}}</td>
+      <td>{{movie.rating * 20}}</td>
+    </tr>
+  </table>
+</div>

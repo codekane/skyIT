@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+:root {
+  --color1: #E6E6E9;
+  --color2: #636366;
+  --color3: #88a2aa;
+  --color4: #C8E6C9;
+  --color5: #FFCDD2;
+  --color6: #FEEDAF;
+
+  --moviesbg: #F8F8FA;
+  --headerbg: #E7E9ED;
+}
+
+html, body {
+  background-color: var(--color1);
+}
