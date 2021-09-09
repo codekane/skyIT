@@ -1,21 +1,11 @@
 <div class="movies-container">
-  <table>
-    <tr>
-      <th>Title</th>
-      <th>Year</th>
-      <th>Running Time</th>
-      <th>Director</th>
-      <th>Certification</th>
-      <th>Rating</th>
-    </tr>
-
-    <tr *ngFor="let movie of movies">
-      <td>{{movie.title}}</td>
-      <td>{{movie.releaseDate}}</td>
-      <td>{{movie.length}}</td>
-      <td>{{movie.director}}</td>
-      <td>{{movie.certification}}</td>
-      <td>{{movie.rating * 20}}</td>
-    </tr>
-  </table>
-</div>
+  <ag-grid-angular
+      class="ag-theme-alpine"
+      style="width: 100%; height: 800px; margin: 0 auto;"
+      [rowData]="movies"
+      [columnDefs]="columnDefs"
+      [defaultColDef]="defaultColDef"
+      [pagination]="true"
+      [paginationAutoPageSize]="true"
+      >
+  </ag-grid-angular>
